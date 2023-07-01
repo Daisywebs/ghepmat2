@@ -14,9 +14,9 @@ from scripts.faceswap_version import version_flag
 import os
 
 def get_models():
-    models_path = os.path.join(scripts.basedir(), "extensions/sd-webui-faceswap/models/*")
+    models_path = os.path.join(scripts.basedir(), "extensions/ghepmat2/models/*")
     models = glob.glob(models_path)
-    models_path = os.path.join(scripts.basedir(), "models/FaceSwap/*")
+    models_path = os.path.join(scripts.basedir(), "models/ghepmat2/*")
     models += glob.glob(models_path)
     models = [x for x in models if x.endswith(".onnx") or x.endswith(".pth")]
     return models
